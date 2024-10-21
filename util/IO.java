@@ -81,7 +81,7 @@ public class IO {
     }
 
     public static void dealLexical(List<Token> tokens) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(STDIN_PATH))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(STDOUT_PATH))) {
             for (Token token : tokens) {
                 writer.write(token.toString());
                 writer.newLine(); // 添加换行
