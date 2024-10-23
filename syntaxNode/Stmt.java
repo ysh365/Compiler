@@ -8,7 +8,7 @@ import util.IO;
 
 import java.util.List;
 
-import static frontend.Parser.nodeMap;
+import static frontend.Syntax.nodeMap;
 
 public class Stmt implements BasciNode {
 /*    Stmt → LVal '=' Exp ';' // 每种类型的语句都要覆盖

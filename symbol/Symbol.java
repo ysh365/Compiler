@@ -1,13 +1,39 @@
 package symbol;
 
+import common.SemanticType;
+
 public class Symbol {
-    private String name;
 
-    public Symbol(String name) {
-        this.name = name;
+    private SemanticType type;    // 符号对应的字符串
+
+    private int dimension; // 0 var，1 array
+
+    private int isConst;// 0 变量，1 常量
+
+    private int bType; // 0 int, 1 char
+
+    private int retType; // 0 int, 1 char, 2 void
+
+    private int paramNum; // 参数个数
+
+    private int[] paramType; // 参数类型
+
+
+    public SemanticType getType() {
+        return type;
     }
 
-    public String getName() {
-        return name;
+
+    public Symbol() {
+
     }
+
+    public Symbol(SemanticType type, int dimension, int isConst, int bType) {
+        this.type = type;
+        this.dimension = dimension;
+        this.isConst = isConst;
+        this.bType = bType;
+    }
+
+
 }

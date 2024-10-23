@@ -5,26 +5,30 @@ import common.SyntaxType;
 import frontend.Token;
 import util.IO;
 
-import static frontend.Parser.nodeMap;
+import static frontend.Syntax.nodeMap;
 
 public class LVal implements BasciNode {
     //  LVal → Ident ['[' Exp ']']
 
-    private Token idenfr;
+    private Token ident;
     private Token lbrack;
     private Exp exp;
     private Token rbrack;
 
-    public LVal(Token idenfr, Token lbrack, Exp exp, Token rbrack) {
-        this.idenfr = idenfr;
+    public LVal(Token ident, Token lbrack, Exp exp, Token rbrack) {
+        this.ident = ident;
         this.lbrack = lbrack;
         this.exp = exp;
         this.rbrack = rbrack;
     }
 
+    public Token getIdent() {
+        return ident;
+    }
+
     @Override
     public void print() {
-        IO.dealSyntax(idenfr.toString());
+        IO.dealSyntax(ident.toString());
         if (lbrack != null) {
             IO.dealSyntax(lbrack.toString());
             exp.print();

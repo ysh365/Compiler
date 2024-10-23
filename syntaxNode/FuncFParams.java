@@ -7,7 +7,7 @@ import util.IO;
 
 import java.util.List;
 
-import static frontend.Parser.nodeMap;
+import static frontend.Syntax.nodeMap;
 
 public class FuncFParams implements BasciNode {
     //  FuncFParams → FuncFParam { ',' FuncFParam }

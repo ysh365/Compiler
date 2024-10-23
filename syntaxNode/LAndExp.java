@@ -7,7 +7,7 @@ import util.IO;
 
 import java.util.List;
 
-import static frontend.Parser.nodeMap;
+import static frontend.Syntax.nodeMap;
 
 public class LAndExp implements BasciNode {
     //  LAndExp → EqExp | LAndExp '&&' EqExp

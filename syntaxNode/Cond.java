@@ -4,7 +4,7 @@ import common.BasciNode;
 import common.SyntaxType;
 import util.IO;
 
-import static frontend.Parser.nodeMap;
+import static frontend.Syntax.nodeMap;
 
 public class Cond implements BasciNode {
     // Cond → LOrExp

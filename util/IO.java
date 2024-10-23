@@ -3,7 +3,7 @@ package util;
 /*输入输出解析*/
 
 import common.Error;
-import frontend.Parser;
+import frontend.Syntax;
 import frontend.Token;
 
 import java.io.BufferedWriter;
@@ -64,7 +64,7 @@ public class IO {
         return content.toString();
     }
 
-    public static void dealStdout(Parser parser) {
+    public static void dealStdout(Syntax parser) {
         switch (stage) {
             case 1:
                 dealLexical(parser.getTokens());

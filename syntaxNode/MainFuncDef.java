@@ -5,7 +5,7 @@ import common.SyntaxType;
 import frontend.Token;
 import util.IO;
 
-import static frontend.Parser.nodeMap;
+import static frontend.Syntax.nodeMap;
 
 public class MainFuncDef implements BasciNode {
     //  MainFuncDef → 'int' 'main' '(' ')' Block
