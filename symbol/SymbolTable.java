@@ -3,6 +3,7 @@ package symbol;
 import java.util.HashMap;
 
 public class SymbolTable {
+    private int index; // 符号表编号
 
     private SymbolTable parent = null;  // 父符号表
 
@@ -11,8 +12,9 @@ public class SymbolTable {
     public SymbolTable() {
     }
 
-    public SymbolTable(SymbolTable parent) {
+    public SymbolTable(int index, SymbolTable parent) {
         this.parent = parent;
+        this.index = index;
     }
 
     public Symbol get(String ident) {

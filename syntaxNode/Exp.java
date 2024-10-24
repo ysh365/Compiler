@@ -15,6 +15,10 @@ public class Exp implements BasciNode {
         this.addExp = addExp;
     }
 
+    public AddExp getAddExp() {
+        return addExp;
+    }
+
     @Override
     public void print() {
         addExp.print();

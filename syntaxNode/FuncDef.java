@@ -30,6 +30,18 @@ public class FuncDef implements BasciNode {
         return ident;
     }
 
+    public FuncType getFuncType() {
+        return funcType;
+    }
+
+    public FuncFParams getFuncFParams() {
+        return funcFParams;
+    }
+
+    public Block getBlock() {
+        return block;
+    }
+
     @Override
     public void print() {
         funcType.print();

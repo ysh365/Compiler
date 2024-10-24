@@ -19,6 +19,10 @@ public class LAndExp implements BasciNode {
         this.addTokens = addTokens;
     }
 
+    public List<EqExp> getEqExps() {
+        return eqExps;
+    }
+
     @Override
     public void print() {
         eqExps.get(0).print();

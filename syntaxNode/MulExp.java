@@ -19,6 +19,10 @@ public class MulExp implements BasciNode {
         this.operators = operators;
     }
 
+    public List<UnaryExp> getUnaryExps() {
+        return unaryExps;
+    }
+
     @Override
     public void print() {
         unaryExps.get(0).print();

@@ -20,6 +20,10 @@ public class LOrExp implements BasciNode {
         this.orTokens = orTokens;
     }
 
+    public List<LAndExp> getLAndExps() {
+        return lAndExps;
+    }
+
     @Override
     public void print() {
         lAndExps.get(0).print();

@@ -16,13 +16,11 @@ public class Symbol {
 
     private int paramNum; // 参数个数
 
-    private int[] paramType; // 参数类型
-
+    private int[] paramType; // 参数类型 0 int, 1 char
 
     public SemanticType getType() {
         return type;
     }
-
 
     public Symbol() {
 
@@ -35,5 +33,11 @@ public class Symbol {
         this.bType = bType;
     }
 
+    public Symbol(SemanticType type, int retType, int paramNum, int[] paramType) {
+        this.type = type;
+        this.retType = retType;
+        this.paramNum = paramNum;
+        this.paramType = paramType;
+    }
 
 }

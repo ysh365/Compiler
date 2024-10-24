@@ -25,6 +25,10 @@ public class FuncFParam implements BasciNode {
         return ident;
     }
 
+    public BType getBType() {
+        return bType;
+    }
+
     @Override
     public void print() {
         bType.print();

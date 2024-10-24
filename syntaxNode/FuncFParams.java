@@ -19,6 +19,15 @@ public class FuncFParams implements BasciNode {
         this.commas = commas;
     }
 
+    public List<FuncFParam> getFuncFParams() {
+        return funcFParams;
+    }
+
+
+
+
+
+
     @Override
     public void print() {
         funcFParams.get(0).print();

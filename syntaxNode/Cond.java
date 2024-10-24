@@ -15,6 +15,10 @@ public class Cond implements BasciNode {
         this.lOrExp = lOrExp;
     }
 
+    public LOrExp getLOrExp() {
+        return lOrExp;
+    }
+
     @Override
     public void print() {
         lOrExp.print();

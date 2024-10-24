@@ -20,6 +20,10 @@ public class EqExp implements BasciNode {
         this.tokens = tokens;
     }
 
+    public List<RelExp> getRelExps() {
+        return relExps;
+    }
+
     @Override
     public void print() {
         relExps.get(0).print();
